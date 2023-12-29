@@ -11,6 +11,12 @@
 
     <title>Agenda</title>
 
+    <!-- HiperDialog - alerta de cadastro -->
+    <link rel="stylesheet" id="dialog-lights" type="text/css" href="https://hiperesp.github.io/HiperDialog/src/css/color/default.css">
+    <link rel="stylesheet" type="text/css" href="https://hiperesp.github.io/HiperDialog/src/css/style.css">
+    <script type="application/javascript" src="https://hiperesp.github.io/HiperDialog/src/js/core.js"></script>
+    <script type="application/javascript" src="https://hiperesp.github.io/HiperDialog/src/js/extra.js"></script>
+
     <!--Scripts de icons-->
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
 
@@ -364,9 +370,10 @@
                                                     alt="avatar" class="img-fluid rounded-circle me-3" width="35">
                                             </div>
                                             <div class="p-2 bd-highlight">
-                                                <script src="https://cdn.lordicon.com/lordicon.js"></script>
-                                                <lord-icon src="https://cdn.lordicon.com/lsrcesku.json" trigger="hover">
-                                                </lord-icon>
+                                                <a type="button" data-toggle="modal" data-target="#formsEditModalCenter"><lord-icon src="https://cdn.lordicon.com/lsrcesku.json" trigger="hover">
+                                                </lord-icon></a>
+                                                <a type="button" data-toggle="modal" data-target="#formsBinModalCenter"><lord-icon src="https://cdn.lordicon.com/xekbkxul.json" trigger="hover">
+                                                </lord-icon></a>
                                             </div>
                                         </div>
                                         <p class="small mb-0"><i class="fas fa-star fa-lg text-warning"></i>
@@ -391,9 +398,10 @@
                                                     alt="avatar" class="img-fluid rounded-circle me-3" width="35">
                                             </div>
                                             <div class="p-2 bd-highlight">
-                                                <script src="https://cdn.lordicon.com/lordicon.js"></script>
-                                                <lord-icon src="https://cdn.lordicon.com/lsrcesku.json" trigger="hover">
-                                                </lord-icon>
+                                                <a type="button" data-toggle="modal" data-target="#formsEditModalCenter"><lord-icon src="https://cdn.lordicon.com/lsrcesku.json" trigger="hover">
+                                                </lord-icon></a>
+                                                <a type="button" data-toggle="modal" data-target="#formsBinModalCenter"><lord-icon src="https://cdn.lordicon.com/xekbkxul.json" trigger="hover">
+                                                </lord-icon></a>
                                             </div>
                                         </div>
                                         <p class="small mb-0"><i class="fas fa-star fa-lg text-warning"></i>
@@ -491,17 +499,17 @@
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="apelido">Apelido</label>
-                                <input type="text" class="form-control" id="apelido" name="apelido" placeholder="Apelido" required>
+                                <input type="text" class="form-control" id="apelido" name="apelido" placeholder="Apelido">
                             </div>
                             <div class="form-group col-md-12">
                                 <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" >
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="cpf">CPF</label>
-                                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00">
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="telefone">Telefone</label>
@@ -516,6 +524,79 @@
             </div>
             </div>
         </div>
+
+        <!-- Modal Forms Bin-->
+    <div class="modal fade" id="formsBinModalCenter" tabindex="-1" role="dialog" aria-labelledby="formsBinModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="formsBinModalCenterTitle">Deletar Contato</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                Tem certeza de que deseja deletar este contato?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary">Excluir</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal Forms Edit-->
+    <div class="modal fade" id="formsEditModalCenter" tabindex="-1" role="dialog" aria-labelledby="formsEditModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="formsEditModalCenterTitle">Atualizar Contato</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex justify-content-center mb-3">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/neujejkf.json"
+                        trigger="hover"
+                        style="width:150px;height:150px">
+                    </lord-icon>
+                </div>
+                <form id="myForm">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="apelido">Apelido</label>
+                            <input type="text" class="form-control" id="apelido" name="apelido" placeholder="Apelido" required>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="cpf">CPF</label>
+                            <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" class="form-control" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="submitBtn">Editar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
 
     <!--Começo do código VLibras-->
     <div vw class="enabled">
