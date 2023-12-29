@@ -14,6 +14,14 @@
     <!--Scripts de icons-->
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Mask Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    
+    <script src="src/js/custom.js"></script>
+
     <!-- Fontes personalizadas -->
     <link href="src/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
@@ -336,10 +344,8 @@
 
                     <!--Botão de adicionar contatos-->
 
-                    <div class="d-flex align-items-end flex-column bd-highlight">
-                        <div class="d-flex justify-content-end">
-                            <button type="button" class="btn btn-primary">Novo Contato</button>
-                        </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#formsModalCenter">Novo Contato</button>
                     </div>
 
                     <!-- Começo do Card de contatos-->
@@ -454,6 +460,51 @@
         </div>
     </div>
 
+        <!-- Modal Forms-->
+        <div class="modal fade" id="formsModalCenter" tabindex="-1" role="dialog" aria-labelledby="formsModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="formsModalCenterTitle">Cadastrar Contato</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form id="myForm">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="nome">Nome</label>
+                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="apelido">Apelido</label>
+                                <input type="text" class="form-control" id="apelido" name="apelido" placeholder="Apelido" required>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="cpf">CPF</label>
+                                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="telefone">Telefone</label>
+                                <input type="text" class="form-control" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" id="submitBtn">Salvar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>
+
     <!--Começo do código VLibras-->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
@@ -469,7 +520,7 @@
        <!--Final do código VLibras-->
 
     <!-- Bootstrap core JavaScript-->
-    <script src="src/vendor/jquery/jquery.min.js"></script>
+    <!-- <script src="src/vendor/jquery/jquery.min.js"></script> -->
     <script src="src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
@@ -485,6 +536,7 @@
     <script src="src/js/demo/chart-area-demo.js"></script>
     <script src="src/js/demo/chart-pie-demo.js"></script>
     <script src="src/js/dark-mode-switch.min.js"></script>
+
 
 
 </body>
