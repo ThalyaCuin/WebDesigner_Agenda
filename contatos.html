@@ -12,7 +12,8 @@
     <title>Agenda</title>
 
     <!-- HiperDialog - alerta de cadastro -->
-    <link rel="stylesheet" id="dialog-lights" type="text/css" href="https://hiperesp.github.io/HiperDialog/src/css/color/default.css">
+    <link rel="stylesheet" id="dialog-lights" type="text/css"
+        href="https://hiperesp.github.io/HiperDialog/src/css/color/default.css">
     <link rel="stylesheet" type="text/css" href="https://hiperesp.github.io/HiperDialog/src/css/style.css">
     <script type="application/javascript" src="https://hiperesp.github.io/HiperDialog/src/js/core.js"></script>
     <script type="application/javascript" src="https://hiperesp.github.io/HiperDialog/src/js/extra.js"></script>
@@ -25,7 +26,7 @@
 
     <!-- Mask Plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-    
+
     <script src="src/js/custom.js"></script>
 
     <!-- Fontes personalizadas -->
@@ -65,7 +66,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                
+
 
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
@@ -89,31 +90,46 @@
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item" >
-                <a class="nav-link collapsed" href="favoritos.html" >
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="favoritos.html">
                     <i class="fa fa-solid fa-star"></i>
                     <span>Favoritos</span>
+                </a>
+            </li>
+
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Acessibilidade
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="acessibilidade.html">
+                    <i class="fa fa-solid fa-universal-access"></i>
+                    <span>Acessibilidade</span>
                 </a>
             </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
 
-                        <!-- Heading -->
-                        <div class="sidebar-heading">
-                            dark-mode
-                        </div>
-            
-                        <!-- Nav Item - Pages Collapse Menu -->
-                        <li class="nav-item">
-                            <div class="form-check form-switch" style="padding: 0.5rem;padding-left: 3.65rem;">
-                                <input class="form-check-input" type="checkbox" role="switch" id="darkSwitch">
-                                <label class="form-check-label" for="darkSwitch"> Dark Mode </label>
-                            </div>
-                        </li>
-            
-                        <!-- Divider -->
-                        <hr class="sidebar-divider">
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                dark-mode
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <div class="form-check form-switch" style="padding: 0.5rem;padding-left: 3.65rem;">
+                    <input class="form-check-input" type="checkbox" role="switch" id="darkSwitch">
+                    <label class="form-check-label" for="darkSwitch"> Dark Mode </label>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
 
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
@@ -245,8 +261,7 @@
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="src/img/undraw_profile_1.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="src/img/undraw_profile_1.svg" alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
@@ -257,8 +272,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="...">
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
@@ -269,8 +283,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="src/img/undraw_profile_3.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="src/img/undraw_profile_3.svg" alt="...">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
@@ -302,8 +315,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle"
-                                    src="src/img/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" src="src/img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -342,17 +354,50 @@
 
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                              <li class="breadcrumb-item active" aria-current="page">Contatos</li>
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Contatos</li>
                             </ol>
-                          </nav>
+                        </nav>
                     </div>
 
                     <!--Botão de adicionar contatos-->
 
-                    <div class="d-flex justify-content-end">
-                        <button type="button" class="btn btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#formsModalCenter">Novo Contato</button>
+                    <div class="d-flex">
+                        <div class="mr-auto p-2">
+                            <div id="datetime"></div>
+                        </div>
+                        <div class="p-2">
+                            <button type="button" class="btn btn-primary" class="btn btn-primary" data-toggle="modal"
+                                data-target="#formsModalCenter">Novo Contato</button>
+                        </div>
                     </div>
+                    <script>
+                        function displayDateTime() {
+                            // Elemento onde a data e hora serão exibidos
+                            var datetimeElement = document.getElementById('datetime');
+
+                            // Função para atualizar a data e hora
+                            function updateDateTime() {
+                                var now = new Date();
+                                var date = now.toLocaleDateString('pt-BR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+                                var time = now.toLocaleTimeString('pt-BR', { hour: 'numeric', minute: 'numeric', second: 'numeric' });
+
+                                // Exibir a data e hora atual
+                                datetimeElement.innerHTML = date + ' | ' + time;
+                            }
+
+                            // Atualiza a data e hora a cada segundo
+                            setInterval(updateDateTime, 1000);
+
+                            // Exibe a data e hora inicial
+                            updateDateTime();
+                        }
+
+                        // Chama a função quando o documento estiver pronto
+                        document.addEventListener('DOMContentLoaded', function () {
+                            displayDateTime();
+                        });
+                    </script>
 
                     <!-- Começo do Card de contatos-->
 
@@ -370,20 +415,36 @@
                                                     alt="avatar" class="img-fluid rounded-circle me-3" width="35">
                                             </div>
                                             <div class="p-2 bd-highlight">
-                                                <a type="button" data-toggle="modal" data-target="#formsEditModalCenter"><lord-icon src="https://cdn.lordicon.com/lsrcesku.json" trigger="hover">
-                                                </lord-icon></a>
-                                                <a type="button" data-toggle="modal" data-target="#formsBinModalCenter"><lord-icon src="https://cdn.lordicon.com/xekbkxul.json" trigger="hover">
-                                                </lord-icon></a>
+                                                <a type="button" data-toggle="modal"
+                                                    data-target="#callModalCenter"><lord-icon
+                                                        src="https://cdn.lordicon.com/bgcyfijv.json" trigger="hover">
+                                                    </lord-icon></a>
+                                                <a type="button" data-toggle="modal"
+                                                    data-target="#formsEditModalCenter"><lord-icon
+                                                        src="https://cdn.lordicon.com/lsrcesku.json" trigger="hover">
+                                                    </lord-icon></a>
+                                                <a type="button" data-toggle="modal"
+                                                    data-target="#formsBinModalCenter"><lord-icon
+                                                        src="https://cdn.lordicon.com/xekbkxul.json" trigger="hover">
+                                                    </lord-icon></a>
                                             </div>
                                         </div>
                                         <p class="small mb-0"><i class="fas fa-star fa-lg text-warning"></i>
-                                            <span class="mx-2">|</span>Amigo <span class="mx-2">|</span> Apelido: <strong>Alek ne Pai</strong>
+                                            <span class="mx-2">|</span>Amigo <span class="mx-2">|</span> Apelido:
+                                            <strong>Alek ne Pai</strong>
                                         </p>
                                         <hr class="my-4">
-                                        <div class="d-flex flex-column flex-md-row justify-content-start align-items-start align-items-md-center">
-                                            <p class="mx-2"><i class="fas fa-phone ms-4"></i> <span class="text-muted small">Telefone: </span><span class="font-weight-bold">(11) 95763-6089</span></p>
-                                            <p class="mx-2"><i class="fas fa-link ms-4"></i> <span class="text-muted small">Email: </span><span class="font-weight-bold">thalya.dias@gmail.com</span></p>
-                                            <p class="mx-2"><i class="fas fa-id-card ms-4"></i> <span class="text-muted small">CPF: </span><span class="font-weight-bold">867.462.987-16</span></p>
+                                        <div
+                                            class="d-flex flex-column flex-md-row justify-content-start align-items-start align-items-md-center">
+                                            <p class="mx-2"><i class="fas fa-phone ms-4"></i> <span
+                                                    class="text-muted small">Telefone: </span><span
+                                                    class="font-weight-bold">(11) 95763-6089</span></p>
+                                            <p class="mx-2"><i class="fas fa-link ms-4"></i> <span
+                                                    class="text-muted small">Email: </span><span
+                                                    class="font-weight-bold">thalya.dias@gmail.com</span></p>
+                                            <p class="mx-2"><i class="fas fa-id-card ms-4"></i> <span
+                                                    class="text-muted small">CPF: </span><span
+                                                    class="font-weight-bold">867.462.987-16</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -398,37 +459,53 @@
                                                     alt="avatar" class="img-fluid rounded-circle me-3" width="35">
                                             </div>
                                             <div class="p-2 bd-highlight">
-                                                <a type="button" data-toggle="modal" data-target="#formsEditModalCenter"><lord-icon src="https://cdn.lordicon.com/lsrcesku.json" trigger="hover">
-                                                </lord-icon></a>
-                                                <a type="button" data-toggle="modal" data-target="#formsBinModalCenter"><lord-icon src="https://cdn.lordicon.com/xekbkxul.json" trigger="hover">
-                                                </lord-icon></a>
+                                                <a type="button" data-toggle="modal"
+                                                    data-target="#callModalCenter"><lord-icon
+                                                        src="https://cdn.lordicon.com/bgcyfijv.json" trigger="hover">
+                                                    </lord-icon></a>
+                                                <a type="button" data-toggle="modal"
+                                                    data-target="#formsEditModalCenter"><lord-icon
+                                                        src="https://cdn.lordicon.com/lsrcesku.json" trigger="hover">
+                                                    </lord-icon></a>
+                                                <a type="button" data-toggle="modal"
+                                                    data-target="#formsBinModalCenter"><lord-icon
+                                                        src="https://cdn.lordicon.com/xekbkxul.json" trigger="hover">
+                                                    </lord-icon></a>
                                             </div>
                                         </div>
                                         <p class="small mb-0"><i class="fas fa-star fa-lg text-warning"></i>
-                                            <span class="mx-2">|</span>Amigo <span class="mx-2">|</span> Apelido: <strong>Tatah Dias</strong>
+                                            <span class="mx-2">|</span>Amigo <span class="mx-2">|</span> Apelido:
+                                            <strong>Tatah Dias</strong>
                                         </p>
                                         <hr class="my-4">
-                                        <div class="d-flex flex-column flex-md-row justify-content-start align-items-start align-items-md-center">
-                                            <p class="mx-2"><i class="fas fa-phone ms-4"></i> <span class="text-muted small">Telefone: </span><span class="font-weight-bold">(11) 95763-6089</span></p>
-                                            <p class="mx-2"><i class="fas fa-link ms-4"></i> <span class="text-muted small">Email: </span><span class="font-weight-bold">thalya.dias@gmail.com</span></p>
-                                            <p class="mx-2"><i class="fas fa-id-card ms-4"></i> <span class="text-muted small">CPF: </span><span class="font-weight-bold">867.462.987-16</span></p>
+                                        <div
+                                            class="d-flex flex-column flex-md-row justify-content-start align-items-start align-items-md-center">
+                                            <p class="mx-2"><i class="fas fa-phone ms-4"></i> <span
+                                                    class="text-muted small">Telefone: </span><span
+                                                    class="font-weight-bold">(11) 95763-6089</span></p>
+                                            <p class="mx-2"><i class="fas fa-link ms-4"></i> <span
+                                                    class="text-muted small">Email: </span><span
+                                                    class="font-weight-bold">thalya.dias@gmail.com</span></p>
+                                            <p class="mx-2"><i class="fas fa-id-card ms-4"></i> <span
+                                                    class="text-muted small">CPF: </span><span
+                                                    class="font-weight-bold">867.462.987-16</span></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-   
+
                     <!-- Fim do Card de contatos-->
 
                     <div class="d-flex justify-content-center py-5">
                         <nav aria-label="Page navigation example">
                             <ul class="pagination">
-                              <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
-                              <li class="page-item"><a class="page-link" href="#">1</a></li>
-                              <li class="page-item"><a class="page-link" href="#">2</a></li>
-                              <li class="page-item"><a class="page-link" href="#">3</a></li>
-                              <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -443,7 +520,9 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Thalya Cuin <script>document.write(new Date().getFullYear())</script></span>
+                        <span>Copyright &copy; Thalya Cuin
+                            <script>document.write(new Date().getFullYear())</script>
+                        </span>
                     </div>
                 </div>
             </footer>
@@ -480,21 +559,20 @@
         </div>
     </div>
 
-        <!-- Modal Forms-->
-        <div class="modal fade" id="formsModalCenter" tabindex="-1" role="dialog" aria-labelledby="formsModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
+    <!-- Modal Forms-->
+    <div class="modal fade" id="formsModalCenter" tabindex="-1" role="dialog" aria-labelledby="formsModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title" id="formsModalCenterTitle">Cadastrar Contato</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                    <h5 class="modal-title" id="formsModalCenterTitle">Cadastrar Contato</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body">
                     <div class="d-flex justify-content-center mb-3">
-                        <lord-icon
-                            src="https://cdn.lordicon.com/neujejkf.json"
-                            trigger="hover"
+                        <lord-icon src="https://cdn.lordicon.com/neujejkf.json" trigger="hover"
                             style="width:150px;height:150px">
                         </lord-icon>
                     </div>
@@ -502,25 +580,30 @@
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="nome">Nome</label>
-                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Agenda Contatos" required>
+                                <input type="text" class="form-control" id="nome" name="nome"
+                                    placeholder="Agenda Contatos" required>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="apelido">Apelido</label>
-                                <input type="text" class="form-control" id="apelido" name="apelido" placeholder="Agendinha">
+                                <input type="text" class="form-control" id="apelido" name="apelido"
+                                    placeholder="Agendinha">
                             </div>
                             <div class="form-group col-md-12">
                                 <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="agendinha@gmail.com">
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="agendinha@gmail.com">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="cpf">CPF</label>
-                                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00">
+                                <input type="text" class="form-control" id="cpf" name="cpf"
+                                    placeholder="000.000.000-00">
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="telefone">Telefone</label>
-                                <input type="text" class="form-control" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                                <input type="text" class="form-control" id="telefone" name="telefone"
+                                    placeholder="(00) 00000-0000" required>
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -529,79 +612,137 @@
                     </form>
                 </div>
             </div>
-            </div>
         </div>
+    </div>
 
-        <!-- Modal Forms Bin-->
-    <div class="modal fade" id="formsBinModalCenter" tabindex="-1" role="dialog" aria-labelledby="formsBinModalCenterTitle" aria-hidden="true">
+    <!-- Modal Forms Bin-->
+    <div class="modal fade" id="formsBinModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="formsBinModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title" id="formsBinModalCenterTitle">Deletar Contato</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="formsBinModalCenterTitle">Deletar Contato</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Tem certeza de que deseja deletar este contato?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Excluir</button>
+                </div>
             </div>
-            <div class="modal-body">
-                Tem certeza de que deseja deletar este contato?
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                <button type="button" class="btn btn-primary">Excluir</button>
-            </div>
-        </div>
         </div>
     </div>
 
     <!-- Modal Forms Edit-->
-    <div class="modal fade" id="formsEditModalCenter" tabindex="-1" role="dialog" aria-labelledby="formsEditModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="formsEditModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="formsEditModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title" id="formsEditModalCenterTitle">Atualizar Contato</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            </div>
-            <div class="modal-body">
-                <div class="d-flex justify-content-center mb-3">
-                    <lord-icon
-                        src="https://cdn.lordicon.com/neujejkf.json"
-                        trigger="hover"
-                        style="width:150px;height:150px">
-                    </lord-icon>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="formsEditModalCenterTitle">Atualizar Contato</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <form id="myForm">
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="nome">Nome</label>
-                            <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="apelido">Apelido</label>
-                            <input type="text" class="form-control" id="apelido" name="apelido" placeholder="Apelido" required>
-                        </div>
-                        <div class="form-group col-md-12">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-                        </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center mb-3">
+                        <lord-icon src="https://cdn.lordicon.com/neujejkf.json" trigger="hover"
+                            style="width:150px;height:150px">
+                        </lord-icon>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="cpf">CPF</label>
-                            <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                    <form id="myForm">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="nome">Nome</label>
+                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome"
+                                    required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="apelido">Apelido</label>
+                                <input type="text" class="form-control" id="apelido" name="apelido"
+                                    placeholder="Apelido" required>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email"
+                                    required>
+                            </div>
                         </div>
-                        <div class="form-group col-md-6">
-                            <label for="telefone">Telefone</label>
-                            <input type="text" class="form-control" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="cpf">CPF</label>
+                                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00"
+                                    required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="telefone">Telefone</label>
+                                <input type="text" class="form-control" id="telefone" name="telefone"
+                                    placeholder="(00) 00000-0000" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" id="submitBtn">Editar</button>
-                    </div>
-                </form>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" id="submitBtn">Editar</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
+    </div>
+
+    <!-- Modal Forms Call-->
+    <div class="modal fade" id="callModalCenter" tabindex="-1" role="dialog" aria-labelledby="callModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="container py-5">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-12">
+                        <div class="card" style="border-radius: 15px;">
+                            <div class="card-body text-center">
+                                <div class="mt-3 mb-4">
+                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
+                                        class="rounded-circle img-fluid" style="width: 100px;" />
+                                </div>
+                                <h4 class="mb-2">Thalya Cuin</h4>
+                                <p class="text-muted mb-4">@Programadora <span class="mx-2">|</span> <a
+                                        href="#!">thalya.dias@gmail.com</a></p>
+                                <div class="mb-4 pb-2">
+                                    <button type="button" class="btn btn-outline-primary btn-floating">
+                                        <i class="fab fa-whatsapp fa-lg"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary btn-floating">
+                                        <i class="fab fa-google fa-lg"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary btn-floating">
+                                        <i class="fab fa-skype fa-lg"></i>
+                                    </button>
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn btn-success btn-rounded btn-lg">
+                                    Ligar
+                                </button>
+                                <div class="d-flex justify-content-between text-center mt-5 mb-2">
+                                    <div>
+                                        <p class="mb-2 h5">105</p>
+                                        <p class="text-muted mb-0">Horas de Ligação</p>
+                                    </div>
+                                    <div class="px-3">
+                                        <p class="mb-2 h5">456</p>
+                                        <p class="text-muted mb-0">Mensagens Enviadas</p>
+                                    </div>
+                                    <div>
+                                        <p class="mb-2 h5">25</p>
+                                        <p class="text-muted mb-0">Total Ligações</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -609,15 +750,15 @@
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+            <div class="vw-plugin-top-wrapper"></div>
         </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
+    </script>
 
-       <!--Final do código VLibras-->
+    <!--Final do código VLibras-->
 
     <!-- Bootstrap core JavaScript-->
     <!-- <script src="src/vendor/jquery/jquery.min.js"></script> -->
