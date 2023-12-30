@@ -64,7 +64,7 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 
 
                 <a class="nav-link" href="index.html">
@@ -81,7 +81,7 @@
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link collapsed" href="contatos.html">
                     <i class="fa fa-solid fa-users"></i>
                     <span>Contatos</span>
@@ -89,7 +89,7 @@
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
+            <li class="nav-item" >
                 <a class="nav-link collapsed" href="favoritos.html" >
                     <i class="fa fa-solid fa-star"></i>
                     <span>Favoritos</span>
@@ -359,7 +359,7 @@
                     <div class="py-3">
                         <div class="row justify-content-center align-items-center">
                             <div class="col-12 col-md-10">
-                                <div class="card mb-5" style="border-radius: 15px;">
+                                <div class="card border-left-primary shadow mb-5" style="border-radius: 15px;">
                                     <div class="card-body p-4">
                                         <div class="d-flex bd-highlight">
                                             <div class="p-2 flex-grow-1 bd-highlight">
@@ -387,7 +387,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" style="border-radius: 15px;">
+                                <div class="card border-left-primary shadow" style="border-radius: 15px;">
                                     <div class="card-body p-4">
                                         <div class="d-flex bd-highlight">
                                             <div class="p-2 flex-grow-1 bd-highlight">
@@ -491,19 +491,26 @@
                 </button>
                 </div>
                 <div class="modal-body">
+                    <div class="d-flex justify-content-center mb-3">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/neujejkf.json"
+                            trigger="hover"
+                            style="width:150px;height:150px">
+                        </lord-icon>
+                    </div>
                     <form id="myForm">
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="nome">Nome</label>
-                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required>
+                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Agenda Contatos" required>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="apelido">Apelido</label>
-                                <input type="text" class="form-control" id="apelido" name="apelido" placeholder="Apelido">
+                                <input type="text" class="form-control" id="apelido" name="apelido" placeholder="Agendinha">
                             </div>
                             <div class="form-group col-md-12">
                                 <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" >
+                                <input type="email" class="form-control" id="email" name="email" placeholder="agendinha@gmail.com">
                             </div>
                         </div>
                         <div class="form-row">

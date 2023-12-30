@@ -25,7 +25,8 @@
 
     <!-- Mask Plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-
+    
+    <script src="src/js/custom.js"></script>
 
     <!-- Fontes personalizadas -->
     <link href="src/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -63,7 +64,7 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 
 
                 <a class="nav-link" href="index.html">
@@ -88,7 +89,7 @@
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
+            <li class="nav-item active" >
                 <a class="nav-link collapsed" href="favoritos.html" >
                     <i class="fa fa-solid fa-star"></i>
                     <span>Favoritos</span>
@@ -336,108 +337,91 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                    <div class="d-sm-flex align-items-center justify-content-between">
+                        <h1 class="h3 mb-0 text-gray-800">Favoritos</h1>
+
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Favoritos</li>
+                            </ol>
+                          </nav>
                     </div>
 
-                    <!-- Content Row -->
-                    <div class="row">
+                    <!-- Começo do Card de contatos-->
 
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Earnings (Monthly)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Earnings (Annual)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-info shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks
+                    <div class="py-3">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-12 col-md-10">
+                                <div class="card border-left-primary shadow mb-5" style="border-radius: 15px;">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex bd-highlight">
+                                            <div class="p-2 flex-grow-1 bd-highlight">
+                                                <h3 class="mb-3">Alek</h3>
                                             </div>
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="progress progress-sm mr-2">
-                                                        <div class="progress-bar bg-info" role="progressbar"
-                                                            style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                                                            aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
+                                            <div class="p-2 bd-highlight">
+                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-2.webp"
+                                                    alt="avatar" class="img-fluid rounded-circle me-3" width="35">
+                                            </div>
+                                            <div class="p-2 bd-highlight">
+                                                <a type="button" data-toggle="modal" data-target="#formsBinModalCenter"><lord-icon src="https://cdn.lordicon.com/xekbkxul.json" trigger="hover">
+                                                </lord-icon></a>
                                             </div>
                                         </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                        <p class="small mb-0"><i class="fas fa-star fa-lg text-warning"></i>
+                                            <span class="mx-2">|</span>Amigo <span class="mx-2">|</span> Apelido: <strong>Alek ne Pai</strong>
+                                        </p>
+                                        <hr class="my-4">
+                                        <div class="d-flex flex-column flex-md-row justify-content-start align-items-start align-items-md-center">
+                                            <p class="mx-2"><i class="fas fa-phone ms-4"></i> <span class="text-muted small">Telefone: </span><span class="font-weight-bold">(11) 95763-6089</span></p>
+                                            <p class="mx-2"><i class="fas fa-link ms-4"></i> <span class="text-muted small">Email: </span><span class="font-weight-bold">thalya.dias@gmail.com</span></p>
+                                            <p class="mx-2"><i class="fas fa-id-card ms-4"></i> <span class="text-muted small">CPF: </span><span class="font-weight-bold">867.462.987-16</span></p>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <!-- Pending Requests Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Pending Requests</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                                <div class="card border-left-primary shadow" style="border-radius: 15px;">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex bd-highlight">
+                                            <div class="p-2 flex-grow-1 bd-highlight">
+                                                <h3 class="mb-3">Tatah</h3>
+                                            </div>
+                                            <div class="p-2 bd-highlight">
+                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-2.webp"
+                                                    alt="avatar" class="img-fluid rounded-circle me-3" width="35">
+                                            </div>
+                                            <div class="p-2 bd-highlight">
+                                                <a type="button" data-toggle="modal" data-target="#formsBinModalCenter"><lord-icon src="https://cdn.lordicon.com/xekbkxul.json" trigger="hover">
+                                                </lord-icon></a>
+                                            </div>
                                         </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                        <p class="small mb-0"><i class="fas fa-star fa-lg text-warning"></i>
+                                            <span class="mx-2">|</span>Amigo <span class="mx-2">|</span> Apelido: <strong>Tatah Dias</strong>
+                                        </p>
+                                        <hr class="my-4">
+                                        <div class="d-flex flex-column flex-md-row justify-content-start align-items-start align-items-md-center">
+                                            <p class="mx-2"><i class="fas fa-phone ms-4"></i> <span class="text-muted small">Telefone: </span><span class="font-weight-bold">(11) 95763-6089</span></p>
+                                            <p class="mx-2"><i class="fas fa-link ms-4"></i> <span class="text-muted small">Email: </span><span class="font-weight-bold">thalya.dias@gmail.com</span></p>
+                                            <p class="mx-2"><i class="fas fa-id-card ms-4"></i> <span class="text-muted small">CPF: </span><span class="font-weight-bold">867.462.987-16</span></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+   
+                    <!-- Fim do Card de contatos-->
 
-
-
-                <!--trabalhar aqui-->
-
-
-
-
-
-
-
-                   
+                    <div class="d-flex justify-content-center py-5">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                              <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+                            </ul>
+                        </nav>
+                    </div>
 
                 </div>
                 <!-- /.container-fluid -->
@@ -486,6 +470,28 @@
         </div>
     </div>
 
+
+        <!-- Modal Forms Bin-->
+    <div class="modal fade" id="formsBinModalCenter" tabindex="-1" role="dialog" aria-labelledby="formsBinModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="formsBinModalCenterTitle">Deletar Contato</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                Tem certeza que deseja remover este contato dos favoritos?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary">Excluir</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
     <!--Começo do código VLibras-->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
@@ -501,7 +507,7 @@
        <!--Final do código VLibras-->
 
     <!-- Bootstrap core JavaScript-->
-    <script src="src/vendor/jquery/jquery.min.js"></script>
+    <!-- <script src="src/vendor/jquery/jquery.min.js"></script> -->
     <script src="src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
@@ -517,6 +523,7 @@
     <script src="src/js/demo/chart-area-demo.js"></script>
     <script src="src/js/demo/chart-pie-demo.js"></script>
     <script src="src/js/dark-mode-switch.min.js"></script>
+
 
 
 </body>
