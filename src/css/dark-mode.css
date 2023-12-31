@@ -44,6 +44,40 @@
     border-radius: 15px;
 }
 
+[data-theme="dark"] .font-weight-bold {
+    color: #fff !important;
+}
+
+[data-theme="dark"] .text-truncate {
+    color: #fff !important;
+}
+
+[data-theme="dark"] .dropdown-menu {
+    background-color: #25282a !important;
+    color: #eee !important;
+}
+
+[data-theme="dark"] .dropdown-item:hover,
+[data-theme="dark"] .dropdown-item:focus {
+    color: #eee;
+    text-decoration: none;
+    background-color: #191b1d;
+}
+
+[data-theme="dark"] .dropdown-item {
+    color: #eaecf4;
+}
+
+[data-theme="dark"] .topbar .dropdown-list .dropdown-item:active {
+    background-color: #3a3b45;
+    color: #eaecf4;
+}
+
+[data-theme="dark"] .list-group-item {
+    background-color: #25282a !important;
+    color: #eee !important;
+}
+
 [data-theme="dark"] .modal-content,
 [data-theme="dark"] .modal-header,
 [data-theme="dark"] .modal-body,

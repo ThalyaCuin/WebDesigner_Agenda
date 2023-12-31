@@ -10,7 +10,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-:root {
+ :root {
   --blue: #4e73df;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -11365,6 +11365,7 @@ body.sidebar-toggled footer.sticky-footer {
   background-image: var(--bs-form-switch-bg);
   background-position: left center;
   border-radius: 2em;
+  border: #3a3b45 1px solid;
   transition: background-position 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
