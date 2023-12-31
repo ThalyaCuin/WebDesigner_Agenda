@@ -11436,3 +11436,17 @@ body.sidebar-toggled footer.sticky-footer {
     border-top: 1px solid #dee2e6 !important;
 }
 
+.modal-content-transpare {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-clip: padding-box;
+  border-radius: 0.3rem;
+  outline: 0;
+}
+
+.custom-width {
+  max-width: 800px;
+}

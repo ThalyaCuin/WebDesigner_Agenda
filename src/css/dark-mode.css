@@ -59,9 +59,9 @@
 
 [data-theme="dark"] .dropdown-item:hover,
 [data-theme="dark"] .dropdown-item:focus {
-    color: #eee;
-    text-decoration: none;
-    background-color: #191b1d;
+    background-color: #191b1d !important;
+    color: #9c9c9c !important;
+    text-decoration: none !important;
 }
 
 [data-theme="dark"] .dropdown-item {
@@ -80,8 +80,23 @@
 
 [data-theme="dark"] .modal-content,
 [data-theme="dark"] .modal-header,
-[data-theme="dark"] .modal-body,
-[data-theme="dark"] .modal-footer {
+[data-theme="dark"] .modal-body {
     background-color: #25282a !important;
     color: #eee !important;
+}
+
+[data-theme="dark"] .modal-footer {
+    color: #eee !important;
+}
+
+[data-theme="dark"] .page-link {
+    background-color: #25282a !important;
+    color: #eee !important;
+}
+
+[data-theme="dark"] .page-link:hover,
+[data-theme="dark"] .page-link:focus {
+    background-color: #191b1d !important;
+    color: #9c9c9c !important;
+    text-decoration: none !important;
 }

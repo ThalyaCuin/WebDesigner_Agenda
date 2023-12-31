@@ -21,6 +21,17 @@ $(document).ready(function () {
         }
     });
 
+    $('#favoritarBtn').click(function () {
+        // Trigger an alert when the button is clicked
+        customAlertDialog('Favoritado com sucesso!');
+        $('#adicionarModalCenter').modal('hide');
+    });
+    $('#favoritarBtn2').click(function () {
+        // Trigger an alert when the button is clicked
+        customAlertDialog('Favoritado com sucesso!');
+        $('#adicionarModalCenter').modal('hide');
+    });
+
     // Custom form validation function for "Novo Contato" modal
     function validateForm() {
         var isValid = true;
