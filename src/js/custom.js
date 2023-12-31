@@ -94,7 +94,22 @@ $(document).ready(function () {
     }
 
     // Add click event listener to the "Excluir" button
-    $('#formsBinModalCenter').on('show.bs.modal', function (event) {
+    $('#formsBinModalCenter1').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget);
+        var modal = $(this);
+
+        // Add a click event listener to the "Excluir" button inside the modal
+        modal.find('.btn-primary').click(function () {
+            // Perform the deletion here (e.g., send an AJAX request)
+            // After successful deletion, show a custom alert
+            customAlertDialog('Contato excluído com sucesso!');
+
+            // Close the modal
+            modal.modal('hide');
+        });
+    });
+
+    $('#formsBinModalCenter2').on('show.bs.modal', function (event) {
         var button = $(event.relatedTarget);
         var modal = $(this);
 
