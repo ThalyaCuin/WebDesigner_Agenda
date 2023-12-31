@@ -28,6 +28,15 @@
     ) !important;
 }
 
+[data-theme="dark"] .bg-gradient-purple {
+    background-color: #3a3e40 !important;
+    background-image: linear-gradient(
+        180deg,
+        #3d3f40 10%,
+        #333536 100%
+    ) !important;
+}
+
 [data-theme="dark"] #content-wrapper {
     background-color: #111 !important;
     color: #eee;
@@ -99,4 +108,8 @@
     background-color: #191b1d !important;
     color: #9c9c9c !important;
     text-decoration: none !important;
+}
+
+[data-theme="dark"] .text-gray-500 {
+    color: #eee !important;
 }
