@@ -99,7 +99,7 @@ $(document).ready(function () {
         var modal = $(this);
 
         // Add a click event listener to the "Excluir" button inside the modal
-        modal.find('.btn-primary').click(function () {
+        modal.find('.btn-purple').click(function () {
             // Perform the deletion here (e.g., send an AJAX request)
             // After successful deletion, show a custom alert
             customAlertDialog('Contato excluído com sucesso!');
@@ -114,7 +114,7 @@ $(document).ready(function () {
         var modal = $(this);
 
         // Add a click event listener to the "Excluir" button inside the modal
-        modal.find('.btn-primary').click(function () {
+        modal.find('.btn-purple').click(function () {
             // Perform the deletion here (e.g., send an AJAX request)
             // After successful deletion, show a custom alert
             customAlertDialog('Contato excluído com sucesso!');
